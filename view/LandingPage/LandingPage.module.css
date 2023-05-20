@@ -1,0 +1,170 @@
+.landing-page--container{
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    filter: blur(0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilos para los textos en landingPage */
+.landing-page-text--container{
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 40px; */
+
+}
+.landing-page-text--container .landing-page--h1-fullstack{
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
+    z-index: 2;
+}
+.landing-page-text--container .landing-page--h2-frontend , .landing-page--h2-haroldev{
+    color: white;
+    font-size: 90px;
+    font-weight: 300;
+    text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
+}
+
+
+.landing-page--h2-frontend{
+    margin: 0 auto;
+    position: absolute; 
+    z-index: 3;
+    bottom: -120px;
+    left: 50px;
+    right: 50px; 
+} 
+.landing-page--h2-haroldev{
+    margin: 0 auto;
+    position: absolute; 
+    z-index: -10;
+    top: -100px;
+    left: 50px;
+    right: 50px; 
+} 
+
+/* estilos para las imagenes de landing */
+
+.landing-page--logo-letters{
+    position: absolute;
+    width: 200px;
+    top: 120px;
+    filter: invert(100%) drop-shadow(0px 0px 2px rgb(146, 145, 145));
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
+}
+
+.lading-page-Background{
+    width: calc(100vw + 200px);
+    height: auto;
+    position: absolute;
+    z-index: -1000000;
+}
+
+.lading-page-mountBack{
+    margin: 0 auto;
+    position: absolute;
+    width: 600px;
+    height: 790px;
+    bottom:-120px;
+    z-index: -10;
+    
+}
+.landing-page-mountFirst{
+    margin: 0 auto;
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    bottom: -160px;
+    left: 70px;
+    z-index: 10;
+    filter:contrast(1.2);
+}
+.lading-page-mountBackLeft{
+    margin: 0 auto;
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    bottom: -200px;
+    left: -100px;
+   
+}
+.lading-page-mountSecond{
+    margin: 0 auto;
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    bottom: -150px;
+    right: 120px;
+    z-index: 10;
+    filter: contrast(1.2);
+}
+.lading-page-mountBackRight{
+    margin: 0 auto;
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    bottom: -100px;
+    right: -130px;
+    z-index: -10;
+}
+
+.landing-page-cloud{
+    width: 700px;
+    height: 800px;
+    transform: rotate(0deg);
+    right: -80px;
+    bottom: -100px;
+    position: absolute;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+.landing-page-cloud2{
+    position: absolute;
+    transform: rotate(90deg) !important;
+    width: 700px;
+    height: 700px;
+    left: -250px;
+    top: -200px;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 0.5px rgb(255, 255, 255)) ;
+}
+.landing-page-cloudBack{
+    position: absolute;
+    width: calc(100vw + 100px);
+    height: 1000px;
+    bottom: -300px;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 0.5px rgb(255, 255, 255)) ;
+}
+
+.parallax {
+    -moz-transition: 0s trasform  cubic-bezier(.2,.49,.32,.99) !important;
+    -moz-transform: translateZ(0);
+    transition: 0.01s transform cubic-bezier(.2,.49,.32,.99);
+    transform: translateZ(0);
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-pointer-events: none;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
