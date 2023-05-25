@@ -167,7 +167,127 @@
         top: 160px;
     }
 }
+@media (max-width:1399px) {
+    .lading-page-mountBack,
+    .landing-page-mountFirst,
+    .lading-page-mountBackLeft,
+    .lading-page-mountSecond,
+    .lading-page-mountBackRight{
+        position: relative;
+    }
+    .lading-page-mountBack{
+        bottom: -150px;
+        left: 80px;
+    }
+    .landing-page-mountFirst{
+        bottom: -270px;
+        left: 215px
+    }
+    .lading-page-mountSecond{
+        bottom: -270px;
+        right: 190px;
+    }
+    .lading-page-mountBackRight{
+        width: 550px;
+        bottom: -200px;
+        right: 400px;
+    }
+    .lading-page-mountBackLeft{
+        width: 550px;
+        bottom: -250px;
+        left: 450px;
+    }
+}
 
+@media (max-width:880px) {
+    .lading-page-mountBackRight,
+    .lading-page-mountBackLeft{
+        display: none;
+    }
+    .lading-page-mountBack{
+        position: absolute;
+        bottom: -160px;
+        left: 0;
+        right: 0;
+    }
+    .landing-page-mountFirst,
+    .lading-page-mountSecond{
+        position: absolute;
+    }
+    .landing-page-mountFirst{
+        bottom: -180px;
+        left: -275px
+    }
+    .lading-page-mountSecond{
+        bottom: -180px;
+        right: -240px;
+    } 
+    .landing-page-text--container .landing-page--h1-fullstack{
+        color: white;
+        font-size: 13.5vw;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        z-index: 2;
+        line-height:65px;
+    }
+    .landing-page--h2-frontend{
+        font-size: 75px  !important;
+    } 
+}
+
+
+@media (max-width:655px) {
+    .landing-page--h2-frontend{
+        font-size: 10vw !important;
+        margin: 0 auto;
+        position: absolute; 
+        z-index: 3;
+        bottom: -100px;
+        left: 50px;
+        right: 50px; 
+    } 
+    .lading-page-Background{
+        width: calc(100vw + 500px);
+        height: calc(100vh + 200px);
+        right: -100px;
+        position: absolute;
+        z-index: -1000000;
+    }
+}
+@media (max-width:561px) {
+    .landing-page-mountFirst{
+        bottom: -180px;
+        left: -320px
+    }
+    .lading-page-mountSecond{
+        bottom: -180px;
+        right: -280px;
+    } 
+}
+
+@media (max-width:415px) {
+    .landing-page-text--container .landing-page--h1-fullstack{
+        line-height:40px;
+    }
+    .lading-page-mountBack{
+        position: absolute;
+        bottom: -160px;
+        left: -70px;
+        right: 0;
+    }
+    .landing-page--h2-frontend{
+        z-index: 3;
+        bottom: -60px;
+        /* font-size: 7vw !important; */
+    } 
+    .landing-page-mountFirst{
+        bottom: -180px;
+        left: -340px
+    }
+    .lading-page-mountSecond{
+        bottom: -180px;
+        right: -300px;
+    } 
+}
 
 
 
