@@ -38,3 +38,42 @@
     margin: 0px 5px;
     font-weight: 300;
 }
+
+@media (max-width:900px) {
+    .navbar--container{
+        flex-direction: column;
+        height: min-content;
+    }
+    .navbar--container .navbar-anchor--container {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:680px) {
+    .navbar--container{
+       padding: 20px 0px;
+    }
+    .navbar--container .navbar-anchor--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-content: center;
+    }
+    .navbar--container .navbar-anchor--container .navbar-anchor{
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px;
+    }
+    .navbar-logo--container{
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar--container .navbar-anchor--container .navbar-anchor{
+        font-size: 20px;
+    }
+}
