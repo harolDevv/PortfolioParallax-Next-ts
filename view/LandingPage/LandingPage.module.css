@@ -246,14 +246,20 @@
         right: 50px; 
     } 
     .lading-page-Background{
-        width: calc(100vw + 500px);
+        width: calc(100vw + 1000px);
         height: calc(100vh + 200px);
-        right: -100px;
+        right: -20px;
         position: absolute;
         z-index: -1000000;
     }
 }
 @media (max-width:561px) {
+    .landing-page-cloud2{
+       display: none;
+    }
+    .landing-page-cloudBack{
+        display: none;
+    }
     .landing-page-mountFirst{
         bottom: -180px;
         left: -320px
@@ -266,7 +272,7 @@
 
 @media (max-width:415px) {
     .landing-page-text--container .landing-page--h1-fullstack{
-        line-height:40px;
+        line-height:35px;
     }
     .lading-page-mountBack{
         position: absolute;
