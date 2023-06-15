@@ -1,0 +1,15 @@
+.timeline-father--container{
+    width: 100%;
+}
+.timeline-father--container .line-father--container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+}
+.timeline-father--container .line-father--container .line-boxes--container{
+    display: grid;
+    grid-template-rows: 144px 144px 144px 144px;
+    width: 100%;
+    gap: 20px;
+}

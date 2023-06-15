@@ -1,0 +1,13 @@
+.Cards-testimonial-father_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    height: 82%;
+}
+.Cards-testimonial-father_container .Cards_container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}

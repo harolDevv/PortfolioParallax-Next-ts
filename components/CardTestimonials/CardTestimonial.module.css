@@ -1,0 +1,162 @@
+
+
+.enfoco{
+    display: flex;
+    flex-direction: column;
+    width: 386px;
+    height: 480px;
+    border: 4px dashed var(--colorpurple);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/* estilos body */
+.enfoco .Card-Testimonials--body{
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-top: 10px;
+}
+.enfoco .Card-Testimonials--body a{
+    text-decoration: none;
+    color: var(--colorpurple);
+    font-weight: 600;
+}
+.enfoco .Card-Testimonials--body p{
+    color: #2B2C4F;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* estilos footer */
+.enfoco .Card-Testimonials--footer{
+    display: flex;
+    font-size: 14px;
+    color: var(--colorpurple);
+    border-top: 0.5px solid var(--colorpurple);
+    margin-top: auto;
+    padding: 10px;
+    height: 90px;
+}
+.enfoco .Card-Testimonials--footer .Card--footer-img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.enfoco .Card-Testimonials--footer .Card--footer-img_container img{
+    border-radius: 50%;
+}
+.enfoco .Card-Testimonials--footer .Card--footer-info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.enfoco .Card-Testimonials--footer .Card--footer-info_container h3{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* estilos dels header */
+
+.enfoco .Card-Testimonials--header {
+    position: relative;
+    height: 100px;
+    padding: 20px;
+}
+.enfoco .Card-Testimonials--header span{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    letter-spacing: -25px;
+    color: var(--colorpurple);
+}
+
+
+
+
+
+
+.noenfoco{
+    display: flex;
+    flex-direction: column;
+    width: 386px;
+    height: 480px;
+    border: 4px dashed var(--graynofoco);
+    border-radius: 20px;
+    padding: 20px;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* estilos body */
+.noenfoco .Card-Testimonials--body{
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-top: 10px;
+}
+.noenfoco .Card-Testimonials--body a{
+    text-decoration: none;
+    color: var(--graynofoco);
+    font-weight: 600;
+}
+.noenfoco .Card-Testimonials--body p{
+    color: var(--graynofoco);
+    font-weight: 400;
+    text-align: left;
+}
+
+/* estilos footer */
+.noenfoco .Card-Testimonials--footer{
+    display: flex;
+    font-size: 14px;
+    color: var(--graynofoco);
+    border-top: 0.5px solid var(--graynofoco);
+    margin-top: auto;
+    padding: 10px;
+    height: 90px;
+}
+.noenfoco .Card-Testimonials--footer .Card--footer-img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.noenfoco .Card-Testimonials--footer .Card--footer-img_container img{
+    border-radius: 50%;
+    filter: opacity(0.2);
+}
+.noenfoco .Card-Testimonials--footer .Card--footer-info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.noenfoco .Card-Testimonials--footer .Card--footer-info_container h3{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* estilos dels header */
+
+.noenfoco .Card-Testimonials--header {
+    position: relative;
+    height: 100px;
+    padding: 20px;
+}
+.noenfoco .Card-Testimonials--header span{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    letter-spacing: -25px;
+    color: var(--graynofoco);
+}
+

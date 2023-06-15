@@ -1,0 +1,30 @@
+.line-container{
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 143px);
+    width: 100px;
+}
+.line-container .line-point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 60px;
+    border: 2px solid var(--colorpurple);
+    background-color: rgba(0, 0, 255, 0);
+    border-radius: 50%;
+}
+.line-container .line-point .point{
+    width: 5px;
+    height: 5px;
+    background-color: var(--colorpurple);
+    border-radius: 50%;
+}
+.line-container .line{
+    height: 100%;
+    width: 2px;
+    background-color: var(--colorpurple);
+}

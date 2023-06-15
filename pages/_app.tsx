@@ -1,11 +1,11 @@
-import { Layout } from '@/Layout'
+import { AppProvider } from '@/Context/AppProvider'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
-    <Layout title='HarolDev'>
+    <AppProvider>
       <Component {...pageProps} />
-    </Layout> 
+    </AppProvider>
   )
 }

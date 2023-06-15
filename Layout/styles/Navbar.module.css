@@ -10,6 +10,7 @@
     bottom: 0px;
     z-index: 1000000000000000;
     border-bottom: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.359);
 }
 .navbar-logo--container{
     color: white;
@@ -34,7 +35,7 @@
     text-decoration: none;
     color: white;
     font-size: 26px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0px 5px;
     font-weight: 300;
 }
