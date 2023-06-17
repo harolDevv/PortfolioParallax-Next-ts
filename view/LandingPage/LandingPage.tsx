@@ -14,6 +14,7 @@ import Image from 'next/image'
 
 //estilos
 import styles from './LandingPage.module.css'
+import { FramerBox } from '@/components'
 
 interface CursorPosition {
     x: number;
@@ -68,6 +69,7 @@ export const LandingPage = () => {
         <Image priority={true} width={500} height={500}   ref={(el) => (parallax_el.current[6] = el)} src={MountBack} alt="Img Mount BackRight" data-speedx='0.055' data-speedy='0.02' className={`${styles['mountain']} ${styles['parallax']} ${styles['lading-page-mountBackRight']}`} />
         <Image priority={true} width={500} height={500}   ref={(el) => (parallax_el.current[7] = el)} src={Cloud2} alt="Img Cloud" data-speedx='0.1' data-speedy='0.02' className={`${styles['parallax']} ${styles['landing-page-cloud2']}`}/>
         <Image priority={true} width={500} height={500}   ref={(el) => (parallax_el.current[8] = el)} src={CloudBack} alt="Img CloudBack" data-speedx='0.1' data-speedy='0.05'  className={`${styles['parallax']} ${styles['landing-page-cloudBack']}`}/>
+        <FramerBox/>
     </main>
   )
 }

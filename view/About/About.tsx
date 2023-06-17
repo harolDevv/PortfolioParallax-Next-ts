@@ -1,3 +1,4 @@
+import { FramerBox } from '@/components'
 import styles from './About.module.css'
 
 export const About = () => {
@@ -14,6 +15,7 @@ export const About = () => {
                 <button className={styles['about-callAction-child--button']}>Ver Cv</button>
             </div>
         </div>
+        <FramerBox/>
     </section>
   )
 }

@@ -6,14 +6,14 @@ interface AppContextType {
 }
 
 const initialAppContext: AppContextType = {
-  pageState: 'LandingPage',
+  pageState: 'Inicio',
   setPageState: () => {},
 };
 
 const AppContext = createContext<AppContextType>(initialAppContext);
 
 const AppProvider: React.FC<PropsWithChildren>= ({ children }) => {
-  const [pageState, setPageState] = useState('LandingPage');
+  const [pageState, setPageState] = useState('Inicio');
 
   return (
     <AppContext.Provider value={{ pageState, setPageState }}>

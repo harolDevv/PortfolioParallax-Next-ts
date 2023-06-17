@@ -1,0 +1,42 @@
+.projectItem-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    cursor: pointer;
+}
+.projectItem-container div{
+    width: 100%;
+}
+.projectItem-container .projectItem-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorpurple);
+    text-align: center;
+    font-size: 30px;
+}
+.projectItem-container .projectItem-image svg{
+    font-size: 35px;
+}
+.projectItem-container .projectItem-info{
+    display: flex;
+    flex-direction: column;
+}
+.projectItem-container .projectItem-info h4{
+   color: var(--colorpurple);
+   font-size: 18px;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+.projectItem-container .projectItem-info span{
+   color: gray;
+   font-weight: 300;
+   font-size: 16px;
+}
+
+.Project-foco{
+    border-bottom: 3px dashed var(--colorpurple);
+}
+
+

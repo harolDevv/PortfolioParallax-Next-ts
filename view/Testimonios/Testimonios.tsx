@@ -1,4 +1,4 @@
-import { CardTestimonials, TitleHeader } from '@/components'
+import { CardTestimonials, FramerBox, TitleHeader } from '@/components'
 import { Testimonial } from '@/assets'
 import styles from './Testimonios.module.css'
 
@@ -24,6 +24,7 @@ export const Testimonios = () => {
             /> */}
         </div>
       </div>
+      <FramerBox/>
     </section>
   )
 }

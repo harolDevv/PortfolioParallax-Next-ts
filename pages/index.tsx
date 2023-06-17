@@ -1,7 +1,8 @@
-import { BurguerMenu } from "@/components"
+import { BurguerMenu} from "@/components"
 import { AppContext } from "@/Context/AppProvider"
 import { About, LandingPage, Projects, Testimonios, Timeline } from "@/view"
-import { useContext, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
+import { useContext} from "react"
 import styles from '../styles/Home.module.css'
 
 
@@ -34,7 +35,11 @@ export default function Home() {
   return (
     <main className={styles['main-father--container']}>
       <BurguerMenu />
-      {renderComponent()}
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div key={pageState} className='envolt-key'>
+          {renderComponent()}
+        </motion.div>
+      </AnimatePresence>
     </main>
   );
 }

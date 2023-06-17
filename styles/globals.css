@@ -14,3 +14,7 @@
   --colortext:#3C4353;
   --graynofoco: rgb(220, 220, 220);
 }
+
+.envolt-key{
+  position: absolute;
+}

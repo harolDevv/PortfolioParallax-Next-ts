@@ -1,0 +1,11 @@
+.projects-father--container{
+    height: 100vh;
+}
+.projects-father--container .projectsGallery-father--container{
+    height: calc(100% - 175px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    width: 100%;
+}

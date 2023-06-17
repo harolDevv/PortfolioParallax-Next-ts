@@ -5,7 +5,6 @@
     scroll-snap-type: x mandatory;
     overflow-y: hidden;
     overflow-x: auto;
-    padding-bottom: 17px;
 }
 .main-father--container::-webkit-scrollbar {
     width: 8px;

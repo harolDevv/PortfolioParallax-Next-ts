@@ -1,4 +1,4 @@
-import { BoxTimeLine, Line, TitleHeader } from '@/components'
+import { BoxTimeLine, FramerBox, Line, TitleHeader } from '@/components'
 import { FC } from 'react'
 import styles from './Timeline.module.css'
 export const Timeline:FC = () => {
@@ -16,6 +16,7 @@ export const Timeline:FC = () => {
           <BoxTimeLine className='box4' BoxDate='2022' BoxHeaderInfo='Restoner' BoxBody='dbkwqbdjhqwbhdjhw'/>
         </div>
       </div>
+      <FramerBox/>
     </section>
   )
 }

@@ -6,7 +6,7 @@ import styles from './BurguerMenu.module.css'
 
 export const BurguerMenu = () => {
     const menuRef = useRef<HTMLDivElement>(null);
-    const { setPageState } = useContext(AppContext);
+    const { pageState,setPageState } = useContext(AppContext);
     const menuLinks = ['Inicio' , 'Sobre mi' , 'Experiencia' , 'Proyectos' , 'Testimonios']
     const variants = {
         open:{
@@ -53,10 +53,10 @@ export const BurguerMenu = () => {
                     menuLinks.map((link, index) => (
                         <motion.span
                         onClick={ () => setPageState(link)}
-                        className={styles['BurguerMenu-items']}
+                        className={`${styles['BurguerMenu-items']} ${pageState === link && styles['Item-visit']}`}
                         initial={{y: 20 , opacity:0}}
                         animate={{ y:0 , opacity: 1}}
-                        transition={{duration:.2 ,delay: Number(`.${Math.floor(index + 1.5)}`) , y:{stiffness:1000, velocity:-100}}}
+                        transition={{duration:.2 ,delay: Number(`.${Math.floor(index + 2.8)}`) , y:{stiffness:1000, velocity:-100}}}
                         key={index}>{link}</motion.span>
                     ))
                 ) : null
