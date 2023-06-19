@@ -37,7 +37,9 @@ export default function Home() {
       <BurguerMenu />
       <AnimatePresence mode="wait" initial={false}>
         <motion.div key={pageState} className='envolt-key'>
-          {renderComponent()}
+         
+            {renderComponent()}
+         
         </motion.div>
       </AnimatePresence>
     </main>

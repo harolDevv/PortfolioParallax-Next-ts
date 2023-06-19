@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { FC } from 'react';
 import styles from './BoxTimeLine.module.css'
 
@@ -6,16 +7,21 @@ interface Props{
     BoxHeaderInfo: string;
     BoxBody:string;
     className: string;
+    delayAnimation:number;
 }
 
-export const BoxTimeLine:FC<Props> = ({BoxDate,BoxBody,BoxHeaderInfo, className}) => {
+export const BoxTimeLine:FC<Props> = ({BoxDate,BoxBody,BoxHeaderInfo, className,delayAnimation}) => {
   return (
-    <div className={`${styles['box--container']} ${styles[className]}`}>
+    <motion.div 
+    initial={{opacity:0, scale:0}}
+    animate={{opacity:1, scale:1}}
+    transition={{duration:.3, delay:delayAnimation}}
+    className={`${styles['box--container']} ${styles[className]}`}>
         <div className={styles['box--header']}>
             <span className={styles['box--header-date']}>{BoxDate}</span> 
             <span className={styles['box--header-info']}>{BoxHeaderInfo}</span>
         </div>
     <div className={styles['box--body']}>{BoxBody}</div>
-    </div>
+    </motion.div>
   )
 }

@@ -28,16 +28,58 @@
     left: 80px;
     font-size: 33px;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 .ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info p{
     color: var(--colortext);
     width: 400px;
+    margin-top: 60px;
 }
-.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info a{
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info .ProjectsGallery-selection-links{
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info .ProjectsGallery-selection-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--colorpurple);
     text-decoration: none;
     font-size: 20px;
 }
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info .ProjectsGallery-selection-info-allProjects{
+    padding: 10px;
+    background-color: var(--colorpurple);
+    color: white;
+    text-decoration: none;
+    margin-top: 40px;
+    align-self: flex-start;
+    margin-left: 60px;
+}
+
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info-image-Restoner{
+    background-image: url('https://res.cloudinary.com/dnur99s4h/image/upload/v1673387851/Dise%C3%B1o_sin_t%C3%ADtulo_1_nfmhfw.png');
+    background-position: center;
+    background-size: cover;
+}
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info-image-SN{
+    background-image: url('https://res.cloudinary.com/dnur99s4h/image/upload/v1673390467/Image_container_1_bsbz7z.png');
+    background-position: center;
+    background-size: cover;
+}
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info-image-FW{
+    background-image: url('https://res.cloudinary.com/dnur99s4h/image/upload/v1673448296/Image_container_3_1_hcfdj5.png');
+    background-position: center;
+    background-size: cover;
+}
+.ProjectsGallery-father__container .ProjectsGallery-selection .ProjectsGallery-selection-info-image-DA{
+    background-image: url('https://res.cloudinary.com/dnur99s4h/image/upload/v1673391446/Image_container_2_1_lj41jv.png');
+    background-position: center;
+    background-size: cover;
+}
+
 
 .ProjectsGallery-father__container .ProjectsGallery-options{
     display: flex;

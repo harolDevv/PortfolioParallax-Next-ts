@@ -9,7 +9,7 @@
 }
 .timeline-father--container .line-father--container .line-boxes--container{
     display: grid;
-    grid-template-rows: 144px 144px 144px 144px;
+    grid-template-rows: 140px 140px 140px 140px;
     width: 100%;
     gap: 20px;
 }

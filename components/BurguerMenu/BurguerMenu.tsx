@@ -1,3 +1,4 @@
+import { PlaySound } from '@/assets'
 import { AppContext } from '@/Context/AppProvider'
 import {motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
@@ -39,6 +40,11 @@ export const BurguerMenu = () => {
     };
   }, []);
 
+  const handleClick = (link:string) => {
+    setPageState(link)
+    PlaySound('/sounds/efectoEncima.ogg')
+  }
+
   return (
     <motion.div className={styles['BurguerMenur-father__container']}>
         <motion.div
@@ -52,7 +58,7 @@ export const BurguerMenu = () => {
                 (
                     menuLinks.map((link, index) => (
                         <motion.span
-                        onClick={ () => setPageState(link)}
+                        onClick={ () => handleClick(link) }
                         className={`${styles['BurguerMenu-items']} ${pageState === link && styles['Item-visit']}`}
                         initial={{y: 20 , opacity:0}}
                         animate={{ y:0 , opacity: 1}}
