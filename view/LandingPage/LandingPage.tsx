@@ -15,6 +15,7 @@ import Image from 'next/image'
 //estilos
 import styles from './LandingPage.module.css'
 import { FramerBox } from '@/components'
+import { motion } from 'framer-motion'
 
 interface CursorPosition {
     x: number;
