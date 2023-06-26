@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <AppProvider>
       <Head>
         <title>HarolDev</title>
+        <meta name="description" content="Descubre mi portafolio de programacion como Full Stack Developer. Explora  mis proyectos proyectos a lo largo de mi carrera y toda mi experiencia tanto como Frontend y Full Stack Developer" />
       </Head>
       <Component {...pageProps} />
     </AppProvider>
