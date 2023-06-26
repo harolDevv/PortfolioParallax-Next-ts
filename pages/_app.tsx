@@ -1,11 +1,15 @@
-import { AppProvider } from '@/Context/AppProvider'
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import Head from 'next/head';
+import { AppProvider } from '@/Context/AppProvider';
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <AppProvider>
+      <Head>
+        <title>HarolDev</title>
+      </Head>
       <Component {...pageProps} />
     </AppProvider>
-  )
+  );
 }
